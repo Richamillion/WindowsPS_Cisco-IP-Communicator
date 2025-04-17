@@ -6,7 +6,7 @@ I've worked in an environment that uses the Cisco IP Communicator softphone in a
 This script runs on an AD joined Windows Machine using a Group Policy Object. Store the script in a location the machine you plan to run it on has permission to. (ex.: \\domain\sysvol\scripts)
 Reference the script in the GPO under: User Configuration > Policies > Windows Settings > Scripts (Logon/Logoff) > Logon under the Powershell Script Tab.
 
-![image](https://github.com/user-attachments/assets/c1a442a1-f2f7-4c7f-a8bc-5f410864c600)
+![image](https://github.com/user-attachments/assets/825030e6-70c0-4bc2-8a60-d91b759aaeb2)
 
 REQUIRED<br>
 Active Directory IPPhone Field
