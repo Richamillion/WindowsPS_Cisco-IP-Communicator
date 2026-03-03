@@ -25,6 +25,7 @@ if ($ciscoUsers | Where-Object {$_.SamAccountName -eq $currentUser}) {
         # Set "Communicator" subkeys in WOW6432Node
         Set-ItemProperty -Path "HKLM:\SOFTWARE\WOW6432Node\Cisco Systems, Inc.\Communicator" -Name "AlternateDeviceName" -Value 1 -Type DWORD -Force
         Set-ItemProperty -Path "HKLM:\SOFTWARE\WOW6432Node\Cisco Systems, Inc.\Communicator" -Name "AlternateTftp" -Value 1 -Type DWord -Force
+        Set-ItemProperty -Path "HKLM:\SOFTWARE\WOW6432Node\Cisco Systems, Inc.\Communicator" -Name "UseDefaultMAC" -Value 0 -Type DWORD -Force        
         ### MAC ###
         Set-ItemProperty -Path "HKLM:\SOFTWARE\WOW6432Node\Cisco Systems, Inc.\Communicator" -Name "HostName" -Value $ciscoUser.IPPhone -Force 
         ### MAC ###
